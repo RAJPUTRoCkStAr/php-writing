@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/styl.css">
+    <!-- linked the css file -->
+    <title>Applo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- my logo and site is alsp important here -->
+    <img src="../clips/logo.png" alt="Avatar Logo" style="width:140px;" class="rounded-pill">
+    <p class="applo">APPLO </p>
+    <!-- starting with letter from here  -->
+    <div class="letter">
+        <h1>Letter</h1>
+        <form action="../php/letter.php" method="post" class="was-validated">
+            <label class="form-label" for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Your name"><br>
+            <label class="form-label" for="class">Class and Section:</label>
+            <input type="text" name="class" id="class" placeholder="Class and Section"><br>
+            <label class="form-label" for="phone">Phone number:</label>
+            <input type="tel" class="phone" name="phone" id="phone" placeholder="XXXXXXXXXX"><br>
+            <label class="form-label" for="roll">Roll number:</label>
+            <input type="tel" name="roll" id="roll" placeholder="XX"><br>
+            <label for="reason">reason for leave :</label>
+            <input type="text" id="reason" name="reason" placeholder="Reason for leave is" > <br>
+            <label class="form-label" for="date">Date:</label>
+            <input type="date" name="date" id="date"><br>
+            <label class="form-label" for="school">Name and address of school:</label>
+            <input type="text" name="school" placeholder="Name of your school"><br>
+            <label class="form-label" id="resp">Respected:</label>
+            <input type="checkbox" id="resp" name="resp" value="madam">
+            <label for="madam">Madam</label>
+            <input type="checkbox" id="resp" name="resp" value="sir">
+            <label for="sir">Sir</label><br>
+            <label class="form-label" for="leaves">Number of days:</label>
+            <input type="text" id="leaves" name="leaves" placeholder="Number of days"><br>
+            <label class="form-label" for="start">Starting date of leave:</label>
+            <input type="date" id="start" name="start"><br>
+            <label class="form-label" for="end">Ending date of leave:</label>
+            <input type="date" id="end" name="end"><br>
+            <button type="submit" class="lsubmit">Submit</button>
+        </form>
+    </div>
+    <hr style="border:solid rgb(68, 68, 68) 8px">
+    <!-- here we will make an form for email -->
+    <div class="email">
+    <h2>email</h2>
+<form action="../php/email.php" method="post" class="email">
+    <label for="ename">Name:</label>
+    <input type="text" id="ename" name="ename" placeholder="Your name">
+
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" placeholder="Reason for leave">
+
+    <label for="manager">Manager name:</label>
+    <input type="text" name="manager" id="manager" placeholder="Manager name">
+
+    <label for="duration">Duration of leave:</label>
+    <input type="tel" name="duration" value="" id="duration" placeholder="Number of days">
+
+    <label for="estart">Start date:</label>
+    <input type="date" id="estart" name="estart">
+
+    <label for="eend">End date:</label>
+    <input type="date" id="eend" name="eend">
+
+    <label for="ereason">Reason for leave:</label>
+    <input type="text" id="ereason" name="ereason">
+
+    <label for="collegue">Colleague who will complete your work:</label>
+    <input type="text" id="collegue" name="collegue" placeholder="Name of colleague">
+
+    <button type="submit" class="esubmit">Submit</button>
+</form>
+</div>
+</body>
+</html>
